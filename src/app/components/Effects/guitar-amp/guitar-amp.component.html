@@ -1,0 +1,11 @@
+<div class="guitar-amp-container">
+	<label for="gain-control">Gain</label>
+	<input id="gain-control" type="range" min="0" max="1" step="0.1" [(ngModel)]="gainControl"
+		(change)="this.adjustGain($event)" />
+	<label for="bass-control">Bass</label>
+	<input id="bass-control" type="range" min="-10" max="10" step="1" [(ngModel)]="bassControl" />
+	<label for="mid-control">Mid</label>
+	<input id="mid-control" type="range" min="-10" max="10" step="1" [(ngModel)]="midControl" />
+	<label for="treble-control">Treble</label>
+	<input id="treble-control" type="range" min="-10" max="10" step="1" [(ngModel)]="trebleControl" />
+</div>
